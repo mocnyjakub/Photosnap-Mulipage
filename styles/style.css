@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8rem 2.4rem;
+}
+
+.intern-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.intern-element__bgc {
+  min-height: 30rem;
+  background-image: url(/images/home/desktop/create-and-share.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.intern-element .bg-beautiful {
+  background-image: url(/images/home/mobile/beautiful-stories.jpg);
+}
+
+.intern-element .bg-design {
+  background-image: url(/images/home/mobile/designed-for-everyone.jpg);
+}
+
+.intern-element .bg-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.intern-element .bg-white a {
+  color: #000;
+}
+
+.intern-element .bg-white::after {
+  display: none;
+}
+
+.intern-element__invite {
+  min-height: 42rem;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.intern-element__invite::after {
+  content: '';
+  display: block;
+  width: 13rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0;
+  left: 3.3rem;
+  background-image: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
+  z-index: 1;
+}
+
+.intern-element__invite__text {
+  padding: 7.2rem 3.3rem;
+}
+
+.intern-element__invite__text h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intern-element__invite__text p {
+  font-size: 1.5rem;
+  opacity: 60%;
+  line-height: 2.5rem;
+  padding: 1.6rem 0 2.3rem;
+  font-weight: 400;
+}
+
+.intern-element__invite__text a {
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.562rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+.intern-element__invite__text a::after {
+  content: '';
+  display: block;
+  width: 4.2rem;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 110%;
+  background-image: url(/images/shared/desktop/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.intern-element__invite__text .black-arr::after {
+  background-image: url(/images/shared/desktop/arrow-black.svg);
+}
+
+.stories .story {
+  height: 37.5rem;
+  background-image: url(/images/stories/mobile/mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.stories .story::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stories .story__text {
+  width: 100%;
+  padding: 0 3.2rem 4rem 3.2rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.stories .story__text__title h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.stories .story__text__title p {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 1.7rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.stories .story__text__title a {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.stories .story__text__title a::after {
+  content: '';
+  display: block;
+  width: 4.2rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 235%;
+  background-image: url(/images/shared/desktop/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.stories .story:nth-of-type(2) {
+  background-image: url(/images/stories/mobile/cityscapes.jpg);
+}
+
+.stories .story:nth-of-type(3) {
+  background-image: url(/images/stories/mobile/18-days-voyage.jpg);
+}
+
+.stories .story:nth-of-type(4) {
+  background-image: url(/images/stories/mobile/architecturals.jpg);
+}
+
+.features {
+  padding: 8rem 3.2rem;
+}
+
+.features .feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .feature__text {
+  text-align: center;
+}
+
+.features .feature__text h3 {
+  padding-top: 4.8rem;
+  padding-bottom: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.features .feature__text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.features .feature:nth-of-type(2) {
+  margin: 5.6rem 0;
+}
+
+.footer {
+  padding: 5.6rem 3.3rem;
+  min-height: 53.9rem;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3.2rem;
+  margin-bottom: 4.9rem;
+}
+
+.footer nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer nav ul li a {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer nav ul li:nth-of-type(n+1) {
+  padding-top: 1.9rem;
+}
+
+.footer .copyright a {
+  display: inline-block;
+  width: 100%;
+  padding: 3rem;
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.562rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+.footer .copyright a::after {
+  content: '';
+  display: block;
+  width: 4.2rem;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 65%;
+  background-image: url(/images/shared/desktop/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.footer .copyright p {
+  font-size: 1.5rem;
+  line-height: 1.953rem;
+  font-weight: 400;
+  text-align: center;
+  opacity: 50%;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

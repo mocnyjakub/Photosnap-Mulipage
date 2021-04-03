@@ -1,0 +1,107 @@
+.intern-element {
+    display: flex;
+    flex-direction: column;
+
+    &__bgc {
+        min-height: 30rem;
+        background-image: url(/images/home/desktop/create-and-share.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .bg-beautiful {
+        background-image: url(/images/home/mobile/beautiful-stories.jpg);
+    }
+
+    .bg-design {
+        background-image: url(/images/home/mobile/designed-for-everyone.jpg);
+    }
+
+
+    .bg-white {
+        background-color: $white;
+        color: $black;
+
+        a {
+            color: $black;
+
+        }
+    }
+
+    .bg-white::after {
+        display: none;
+    }
+
+    &__invite {
+        min-height: 42rem;
+        background-color: $black;
+        color: $white;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 13rem;
+            height: 0.6rem;
+            position: absolute;
+            top: 0;
+            left: 3.3rem;
+            background-image: $gradient;
+            z-index: 1;
+        }
+
+        &__text {
+            padding: 7.2rem 3.3rem;
+
+
+            h1 {
+                font-size: 3.2rem;
+                line-height: 4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: $fs-b;
+                opacity: 60%;
+                line-height: $lh-m;
+                padding: 1.6rem 0 2.3rem;
+                font-weight: 400;
+            }
+
+            a {
+                position: relative;
+                color: $white;
+                font-size: $fs-xs;
+                line-height: 1.562rem;
+                letter-spacing: $ls-xs;
+                font-weight: 700;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 4.2rem;
+                    height: 100%;
+                    position: absolute;
+                    // transform: translateY(-50%);
+                    top: 0rem;
+                    left: 110%;
+                    background-image: url(/images/shared/desktop/arrow.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+
+                }
+
+            }
+
+            .black-arr::after {
+                background-image: url(/images/shared/desktop/arrow-black.svg);
+            }
+        }
+
+
+    }
+
+}
